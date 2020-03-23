@@ -1,0 +1,6 @@
+https://victorydntmd.tistory.com/320
+
+1. gradle 6버전일 경우, 오류 발생 5버전으로 낮췄음
+gradlew wrapper --gradle-version 5.6.4
+
+2. LocalStack 사용 URL
