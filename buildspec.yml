@@ -7,14 +7,17 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - gradlew test
+      - chmod +x ./gradlew
+      - currentVersion=$(cat version | sed 's/-SNAPSHOT//' | tr -d ' ')
+      - echo $currentVersion
+      - ./gradlew test
   post_build:
     commands:
       - echo Build completed on `date`
       - java -version
       - pwd
       - ls
-      - gradlew build -x test
+      - ./gradlew build
 artifacts:
   files:
     - '**/*'
