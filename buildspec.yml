@@ -7,14 +7,14 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - gradle test
+      - ./gradle test
   post_build:
     commands:
       - echo Build completed on `date`
       - java -version
       - pwd
       - ls
-      - grade build -x test
+      - ./gradle build -x test
 artifacts:
   files:
     - '**/*'
