@@ -1,4 +1,4 @@
-package tk.ssambi.www.dataanalytics.controller;
+package tk.ssambi.www.dataanalytics.dto;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -3,11 +3,13 @@ package tk.ssambi.www.dataanalytics.controller;
 import com.amazonaws.services.s3.AmazonS3;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
+import tk.ssambi.www.dataanalytics.dto.PostRequest;
+
 import java.io.IOException;
 
 @RestController
 @RequiredArgsConstructor
-public class InitController {
+public class AwsManageController {
     public static final String BUCKET_WALL_CONTENT = "test-bucket";
 
     private final AmazonS3 amazonS3;
